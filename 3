@@ -1,0 +1,8 @@
+#!/bin/bash
+qemu-system-x86_64 \
+-m 16G \
+-hda images/qhwVM.qcow2 \
+ -cdrom /root/Downloads/CentOS-7-x86_64-DVD-1611.iso \
+-enable-kvm \
+-boot d
+
